@@ -5,7 +5,10 @@ $(document).ready(function () {
 	$('#fullpage').fullpage({
 		//options here
 		autoScrolling: true,
+		css3: true,
 		anchors: ['firstPage', 'secondPage', 'thirdPage', 'forthpage', 'fifthpage'],
+		easing: 'easeInOutCubic',
+		easingcss3: 'ease-out',
 		afterLoad: function (origin, destination, direction, trigger) {
 			// 색인 사용
 

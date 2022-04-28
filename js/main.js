@@ -15,7 +15,7 @@ $(document).ready(function () {
 				$('.logo img').attr('src', './images/logo-dark.png');
 				$('.toggle-btn img').attr('src', './images/menu_icon-dark.png');
 			} else {
-				$('.fixed-nav').fadeOut();
+				// $('.fixed-nav').fadeOut();
 				$('.header nav').removeClass('active');
 				$('.logo img').attr('src', './images/logo.png');
 				$('.toggle-btn img').attr('src', './images/menu_icon.png');

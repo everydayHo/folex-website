@@ -132,3 +132,23 @@ const eventHandler = () => {
 };
 
 document.addEventListener('scroll', eventHandler);
+
+// 포트폴리오 메뉴 엑티브
+
+const filtersBtn = document.querySelectorAll('.filters button');
+const highLight = document.querySelector('.highlight');
+
+for (let i = 0; i < filtersBtn.length; i++) {
+	filtersBtn[i].addEventListener('click', function (e) {
+		let targetLeft = this.offsetLeft;
+		let targetWidth = this.offsetWidth;
+		highLight.style.left = targetLeft + 'px';
+		highLight.style.width = targetWidth + 'px';
+		e.target.classList.add('active');
+		for (let k = 0; k < filtersBtn.length; k++) {
+			if (filtersBtn[k] !== e.target) {
+				filtersBtn[k].classList.remove('active');
+			}
+		}
+	});
+}

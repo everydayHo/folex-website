@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>About - FOLEX</title>
+		<title>portfolio - FOLEX</title>
 		<!-- favicon -->
 		<link
 			rel="apple-touch-icon"
@@ -92,18 +92,12 @@
 		<!-- modernizr -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<!-- swiper -->
-		<link
-			rel="stylesheet"
-			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-		/>
-		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-		
 		<!-- animatecss -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
 		<link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/mixitup.min.js"></script>
 		<script defer src="./js/main.js"></script>
+    <script defer src="./js/filter.js"></script>
 	</head>
 	<body>
 		<header class="header subpage">
@@ -139,110 +133,40 @@
 				<img src="./images/close.png" alt="close toggle menu" />
 			</div>
 		</div>
-		<div class="subpage-banner about">
+		<div class="subpage-banner portfolio">
 			<div class="contents">
-					<h2 class="title_bar center">About</h2>
+					<h2 class="title_bar center">Work</h2>
 					<p>
 						My name Robert Doe. I am Photographer & Traveller.
 					</p>
 				</div>
 		</div>
-		<!-- main -->
-		<div class="main-contents">
-			<div class="our-story ">
-				<div class="story-img animate__animated" data-move="animate__fadeInLeft">our story image</div>
-				<div class="story-contents animate__animated" data-move="animate__fadeInRight">
-					<div class="contents">
-						<h2 class="section_tt title_bar left">Our Story</h2>
-						<p>
-							Nullam maximus posuere fringilla aliquam vel blandit erat<br/> mattis magna cras vitae maecenas vel augue eu sapien semper<br/> tempor pellentesque efficitur sed tellus a sollicitud tincidunt<br/> consectetur interdum pellentesque.
-						</p>
-					</div>
+	<!-- main -->
+    <div class="main-contents">
+			<div class="nav">
+      <div class="filters">
+        <button type="button" data-filter="all" class="active">All</button>
+        <button type="button" data-filter=".world">world</button>
+        <button type="button" data-filter=".sport">sport</button>
+        <button type="button" data-filter=".life">life</button>
+        <button type="button" data-filter=".food"> food</button>
 				</div>
-				<div class="do-contents animate__animated" data-move="animate__fadeInLeft">
-					<div class="contents">
-						<h2 class="section_tt title_bar left">What i do?</h2>
-						<p>
-							Nullam maximus posuere fringilla aliquam vel blandit erat<br/> mattis magna cras vitae maecenas vel augue eu sapien semper<br/> tempor pellentesque efficitur sed tellus a sollicitud tincidunt<br/> consectetur interdum pellentesque.
-						</p>
-					</div>
-				</div>
-				<div class="do-img animate__animated" data-move="animate__fadeInRight">what i do img</div>
-			</div>
-			<div class="people-says">
-				<div class="testimonial-slides swiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<div class="container">
-								<div class="contents">
-									<h2 class="title_bar center">people says</h2>
-									<p>
-										Nullam maximus posuere fringilla aliquam vel blandit erat mattis magna cras vitae<br/>
-										maecenas vel augue eu sapien semper tempor pellentesque efficitur sed tellus a sollicitud<br/>
-										tincidunt consectetur interdum pellentesque.
-								</p>
-									<div class="reviewer">
-										<img src="./images/avatar01.png" alt="review avater" class="icon"/>
-										<h4>Robert</h4>
-										<p>Photographer at Hostro Inc.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="container">
-									<div class="contents">
-										<h2 class="title_bar center">people says</h2>
-										<p>
-										Nullam maximus posuere fringilla aliquam vel blandit erat mattis magna cras vitae<br/>
-									maecenas vel augue eu sapien semper tempor pellentesque efficitur sed tellus a sollicitud<br/>
-									tincidunt consectetur interdum pellentesque.
-									</p>
-									<div class="reviewer">
-										<img src="./images/avater02.png" alt="review avater" class="icon"/>
-											<h4>Joe</h4>
-											<p>Designer at Apple.</p>
-								</div>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="container">
-									<div class="contents">
-										<h2 class="title_bar center">people says</h2>
-										<p>
-										Nullam maximus posuere fringilla aliquam vel blandit erat mattis magna cras vitae<br/>
-										maecenas vel augue eu sapien semper tempor pellentesque efficitur sed tellus a sollicitud<br/>
-										tincidunt consectetur interdum pellentesque.
-									</p>
-								<div class="reviewer">
-									<img src="./images/avater03.png" alt="review avater" class="icon"/>
-									<h4>Angela</h4>
-									<p>Photographer at national geographic.</p>
-									</div>
-								</div>
-								</div>
-							</div>
-						</div>
-							<div class="swiper-button-prev">
-								<span class="sprite big-arrow-left">prev btn</span>
-							</div>
-							<div class="swiper-button-next">
-								<span class="sprite big-arrow-right">next btn</span>
-							</div>
-						</div>
-					</div>
-			<div class="help">
-				<div class="contents">
-					<h2 class="title_bar center">Need help?</h2>
+				<span class="highlight">hightlight</span>
+      </div>
+      <div class="portfolio_list">
+        <!-- <li style="background-image: url(images/road.jpg);" class="item world">
+          <h2 class="title_bar center">winter road</h2>
 					<p>
-						Nullam maximus posuere fringilla aliquam vel blandit erat mattis magna cras vitae.
+						Nature Photography
 					</p>
-					<a href="" class="big btn orange">Contact</a>
-				</div>
-			</div>
-		</div>
-			<!-- footer -->
+					<a href="" class="big btn orange">view project </a>
+        </li> -->
+      </div>
+      <div class="loadmore">
+        <button id="loadmore">Load more</button>
+      </div>
+    </div>
+	<!-- footer -->
 			<div class="footer">
 				<div class="container">
 					<ul class="footer_menu">

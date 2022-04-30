@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>portfolio - FOLEX</title>
+		<title>Single Portfolio - FOLEX</title>
 		<!-- favicon -->
 		<link
 			rel="apple-touch-icon"
@@ -95,9 +95,8 @@
 		<!-- animatecss -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 		<link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/mixitup.min.js"></script>
 		<script defer src="./js/main.js"></script>
-    <script defer src="./js/filter.js"></script>
+    
 	</head>
 	<body>
 		<header class="header subpage">
@@ -133,37 +132,53 @@
 				<img src="./images/close.png" alt="close toggle menu" />
 			</div>
 		</div>
-		<div class="subpage-banner portfolio">
+		<div class="subpage-banner" style="background-image: url(./images/img/world1.jpg);">
 			<div class="contents">
-					<h2 class="title_bar center">Work</h2>
+					<h2 class="title_bar center">run road</h2>
 					<p>
-						My name Robert Doe. I am Photographer & Traveller.
+						I am Photographer & Traveller.
 					</p>
 				</div>
 		</div>
 	<!-- main -->
     <div class="main-contents">
-			<div class="nav">
-      <div class="filters">
-        <button type="button" data-filter="all" class="active">All</button>
-        <button type="button" data-filter=".world">world</button>
-        <button type="button" data-filter=".sport">sport</button>
-        <button type="button" data-filter=".life">life</button>
-        <button type="button" data-filter=".food"> food</button>
-				</div>
-				<span class="highlight">hightlight</span>
-      </div>
-      <div class="portfolio_list">
-        <!-- <li style="background-image: url(images/road.jpg);" class="item world">
-          <h2 class="title_bar center">winter road</h2>
+      <div class="single-info container">
+        <div class="desc">
+          <h2 class="title_bar left">About</h2>
 					<p>
-						Nature Photography
+						Nullam maximus posuere fringilla aliquam vel blandit erat mattis magna cras vitae maecenas vel augue eu sapien semper tempor pellentesque efficitur sed tellus a sollicitud tincidunt consectetur interdum pellentesque.
 					</p>
-					<a href="" class="big btn orange">view project </a>
-        </li> -->
+          <p class="page_nav">
+            <a href="" class="prev"><span class="sprite big-arrow-left">prev button</span> </a>
+            <a href="" class="next"><span class=" sprite big-arrow-right"> next button</span></a>
+          </p>
+        </div>
+        <div class="substate">
+          <dl>
+            <dt>Date:</dt>
+            <dd>12 sep, 21 </dd>
+            <dt>Category:</dt>
+            <dd>Nature, Travel, Life, World</dd>
+            <dt>Camera:</dt>
+            <dd>Canon EOS 5D Mark III</dd>
+          </dl>
+        </div>
       </div>
-      <div class="loadmore">
-        <button id="loadmore">Load more</button>
+      <div class="single-photos">
+        <ul>
+          <li class="double" style="background-image: url('./images/road/road1.jpg');">
+            <h3>sport</h3>
+          </li>
+          <li style="background-image: url('./images/road/road2.jpg');">
+            <h3>life</h3>
+          </li>
+          <li style="background-image: url('./images/road/road3.jpg');">
+            <h3>food</h3>
+          </li>
+          <li class="double" style="background-image: url('./images/road/road4.jpg');">
+            <h3>world</h3>
+          </li>
+        </ul>
       </div>
     </div>
 	<!-- footer -->

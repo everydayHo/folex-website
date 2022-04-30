@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>portfolio - FOLEX</title>
+		<title>Contact - FOLEX</title>
 		<!-- favicon -->
 		<link
 			rel="apple-touch-icon"
@@ -92,12 +92,13 @@
 		<!-- modernizr -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<!-- animatecss -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		
+		
+		
+		
 		<link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/mixitup.min.js"></script>
 		<script defer src="./js/main.js"></script>
-    <script defer src="./js/filter.js"></script>
+    
 	</head>
 	<body>
 		<header class="header subpage">
@@ -133,38 +134,39 @@
 				<img src="./images/close.png" alt="close toggle menu" />
 			</div>
 		</div>
-		<div class="subpage-banner portfolio">
+		<div class="subpage-banner" style="background-image: url(./images/contact.jpg);">
 			<div class="contents">
-					<h2 class="title_bar center">Work</h2>
+					<h2 class="title_bar center">contact</h2>
 					<p>
-						My name Robert Doe. I am Photographer & Traveller.
+						I am Photographer & Traveller.
 					</p>
 				</div>
 		</div>
 	<!-- main -->
     <div class="main-contents">
-			<div class="nav">
-      <div class="filters">
-        <button type="button" data-filter="all" class="active">All</button>
-        <button type="button" data-filter=".world">world</button>
-        <button type="button" data-filter=".sport">sport</button>
-        <button type="button" data-filter=".life">life</button>
-        <button type="button" data-filter=".food"> food</button>
+			<div class="contact-contents">
+				<div class="form">
+					<form action="">
+						<h2 class="title_bar left">get in touch</h2>
+						<p class="field">
+							<label for="username">Your Name</label>
+							<input type="text" id="username" placeholder="Your Name"/>
+						</p>
+						<p class="field">
+							<label for="useremail">Your Email</label>
+							<input type="email" id="useremail" placeholder="Your Email"/>
+						</p>
+						<p class="field textmsg">
+							<label for="usermsg">Message</label>
+							<textarea name="user" id="usermsg" cols="20" rows="7" placeholder="Message"></textarea>
+						</p>
+						<p class="submit">
+							<input type="submit" value="submit" class="big btn orange"/>
+						</p>
+					</form>
 				</div>
-				<span class="highlight">hightlight</span>
-      </div>
-      <div class="portfolio_list">
-        <!-- <li style="background-image: url(images/road.jpg);" class="item world">
-          <h2 class="title_bar center">winter road</h2>
-					<p>
-						Nature Photography
-					</p>
-					<a href="" class="big btn orange">view project </a>
-        </li> -->
-      </div>
-      <div class="loadmore">
-        <button id="loadmore">Load more</button>
-      </div>
+				<div class="map"></div>
+			</div>
     </div>
 	<!-- footer -->
 			<div class="footer">
@@ -192,8 +194,12 @@
 				</div>
 			</div>
 		</div>
-		<button class="back_to_top about_btt">
+		<button class="back_to_top about_btt contact_arrow_up">
 			<span class="sprite big_arrow_up">arrow up</span>
 	</button>
+	<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9eOSSXTgDp9ZiwKvHzy96eOMfgHdM2kM&callback=initMap&v=weekly"
+      defer
+    ></script>
 	</body>
 </html>

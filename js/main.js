@@ -152,3 +152,50 @@ for (let i = 0; i < filtersBtn.length; i++) {
 		}
 	});
 }
+
+//  contact form 라벨 올리기
+if ($('.contact-contents').length > 0) {
+	var formInput = $('.contact-contents form input');
+	var textMessage = $('.contact-contents form textarea');
+	formInput.click(function () {
+		$(this).prev().addClass('active');
+		$(this).attr('placeholder', '');
+	});
+	textMessage.click(function () {
+		$(this).prev().addClass('active');
+		$(this).attr('placeholder', '');
+	});
+}
+
+function initMap() {
+	const Ottav = { lat: 45.431998, lng: -75.6942784 };
+	const map = new google.maps.Map(document.querySelector('.map'), {
+		zoom: 14,
+		center: Ottav,
+	});
+	const contentString =
+		'<div id="map-content">' +
+		'<h2 class="title_bar center">adress</h2>' +
+		'<p>Canada, 1050 Back Street, Ottava<br/>' +
+		'Phone:  (123) 45 67 890</br>' +
+		'hr.folex@gmail.com</p>' +
+		'</div>';
+	const infowindow = new google.maps.InfoWindow({
+		content: contentString,
+	});
+	const marker = new google.maps.Marker({
+		position: Ottav,
+		map,
+		title: 'Folex',
+	});
+
+	marker.addListener('click', () => {
+		infowindow.open({
+			anchor: marker,
+			map,
+			shouldFocus: false,
+		});
+	});
+}
+
+window.initMap = initMap;

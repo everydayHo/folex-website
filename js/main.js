@@ -152,6 +152,8 @@ for (let i = 0; i < filtersBtn.length; i++) {
 		}
 	});
 }
+let $triggerBtn = $('.filters button:first-child');
+$triggerBtn.trigger('click');
 
 //  contact form 라벨 올리기
 if ($('.contact-contents').length > 0) {

@@ -131,7 +131,7 @@ arrowUp.addEventListener('click', (event) => {
 // 	})
 // };
 
-document.addEventListener('scroll', eventHandler);
+// document.addEventListener('scroll', eventHandler);
 
 // 포트폴리오 메뉴 엑티브
 

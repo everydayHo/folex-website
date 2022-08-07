@@ -657,12 +657,6 @@ textarea {
 
 .do-img {
 	background-image: url('../images/about-do.png');
-	opacity: 0;
-	transition: 3000ms;
-}
-.do-contents {
-	opacity: 0;
-	transition: 3000ms;
 }
 
 .our-story .contents h2,
@@ -674,11 +668,6 @@ textarea {
 .do-contents .contents p {
 	margin-bottom: 0;
 	color: #7c858b;
-}
-
-.do-img.animate__fadeInRight,
-.do-contents.animate__fadeInLeft {
-	opacity: 1;
 }
 
 /* people says */

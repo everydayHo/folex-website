@@ -119,17 +119,17 @@ arrowUp.addEventListener('click', (event) => {
 
 // about animate
 
-const animateTarget = document.querySelectorAll('[data-move]');
+// const animateTarget = document.querySelectorAll('[data-move]');
 
-const eventHandler = () => {
-	animateTarget.forEach((item, index) => {
-		let targetOst = item.offsetTop - 300;
-		let targetClass = item.getAttribute('data-move');
-		if (window.scrollY > targetOst) {
-			item.classList.add(targetClass);
-		}
-	});
-};
+// const eventHandler = () => {
+// 	animateTarget.forEach((item, index) => {
+// 		let targetOst = item.offsetTop - 300;
+// 		let targetClass = item.getAttribute('data-move');
+// 		if (window.scrollY > targetOst) {
+// 			item.classList.add(targetClass);
+// 		}
+// 	})
+// };
 
 document.addEventListener('scroll', eventHandler);
 
